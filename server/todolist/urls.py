@@ -6,4 +6,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include("tasks.urls")),
     path("api/", include("context_entries.urls")),
+    path("api/ai/", include("ai.urls")),
 ]

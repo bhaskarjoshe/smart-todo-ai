@@ -2,8 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from server.context_entries.models import ContextEntries
-from server.context_entries.serializers import ContextEntrySerializer
+from .models import ContextEntries
+from .serializers import ContextEntrySerializer
 
 
 class ContextEntriesView(APIView):

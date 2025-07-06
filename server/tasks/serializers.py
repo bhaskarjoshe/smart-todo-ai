@@ -4,13 +4,13 @@ from .models import Category
 from .models import Task
 
 
-class CategorySerializer(serializers.Serializer):
+class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = "__all__"
 
 
-class TaskSerailzer(serializers.Serializer):
+class TaskSerialzer(serializers.ModelSerializer):
     category = CategorySerializer(read_only=True)
     category_id = serializers.PrimaryKeyRelatedField(
         queryset=Category.objects.all(), write_only=True, source="category"
@@ -28,5 +28,5 @@ class TaskSerailzer(serializers.Serializer):
             "deadline",
             "status",
             "created_at",
-            "deleted_at",
+            "updated_at",
         ]
