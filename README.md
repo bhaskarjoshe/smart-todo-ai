@@ -7,10 +7,11 @@ An AI-powered todo list application that helps you manage tasks more intelligent
 
 **Dashboard**
 ![UI Preview](screenshots/dashboard.png)
-**Add Task**
-![UI Preview](screenshots/task.png)
-**Sample AI Suggestion**
+
+
+**Add Task with Sample AI Suggestion**
 ![UI Preview](screenshots/sample_ai_suggestion.png)
+
 **Daily Context**
 ![UI Preview](screenshots/context.png)
 
