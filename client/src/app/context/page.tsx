@@ -55,13 +55,13 @@ export default function ContextPage() {
       <textarea
         value={context}
         onChange={(e) => setContext(e.target.value)}
-        className="border p-2 w-full mb-2"
+        className="border p-2 w-full mb-2 rounded "
         placeholder="Enter context message"
       />
       <select
         value={source}
         onChange={(e) => setSource(e.target.value)}
-        className="border p-2 w-full mb-4"
+        className="border p-2 w-full mb-4 rounded"
       >
         <option value="email">Email</option>
         <option value="whatsapp">WhatsApp</option>

@@ -35,7 +35,7 @@ export default function TaskForm({
       <input
         type="text"
         placeholder="Title"
-        className="border p-2 w-full mb-2"
+        className="border p-2 w-full mb-2 rounded"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
@@ -44,7 +44,7 @@ export default function TaskForm({
       <input
         type="text"
         placeholder="Description"
-        className="border p-2 w-full mb-2"
+        className="border p-2 w-full mb-2 rounded"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
