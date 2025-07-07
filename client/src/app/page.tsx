@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const ROOT_API_URL = "http://localhost:8000/api";
+export const ROOT_API_URL = "http://localhost:8000/api";
 
 export default function DashboardPage() {
   const [tasks, setTasks] = useState([]);
@@ -25,7 +25,7 @@ export default function DashboardPage() {
       <h2 className="text-xl font-semibold mb-4">All Tasks</h2>
       <div className="space-y-4">
         {tasks.map((task) => (
-          <div key={task.id} className="p-4 border rounded bg-white shadow">
+          <div key={task.id} className="rounded-xl border bg-white p-4 shadow-md hover:shadow-lg transition">
             <h3 className="font-bold text-lg">{task.title}</h3>
             <p className="text-gray-700">{task.description}</p>
             <p className="text-sm text-gray-500">
